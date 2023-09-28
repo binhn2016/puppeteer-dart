@@ -1966,7 +1966,7 @@ class ResourceTiming {
       sendEnd: json['sendEnd'] as num,
       pushStart: json['pushStart'] as num,
       pushEnd: json['pushEnd'] as num,
-      receiveHeadersStart: json['receiveHeadersStart'] as num,
+      receiveHeadersStart: (json['receiveHeadersStart'] as num?) ?? 0,
       receiveHeadersEnd: json['receiveHeadersEnd'] as num,
     );
   }
